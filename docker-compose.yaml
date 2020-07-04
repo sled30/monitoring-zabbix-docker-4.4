@@ -251,8 +251,8 @@ services:
     - alpine:3.10
   image: zabbix-web-nginx-pgsql:alpine-local
   ports:
-   - "8081:80"
-   - "8443:443"
+   - "80:80"
+   - "443:443"
   links:
    - postgres-server:postgres-server
    - zabbix-server:zabbix-server
